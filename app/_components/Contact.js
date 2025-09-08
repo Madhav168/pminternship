@@ -58,7 +58,6 @@ const MagneticButton = ({ children }) => {
             className="group relative w-full rounded-xl bg-orange-500 px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-orange-600 overflow-hidden"
         >
             <span className="relative z-10">{children}</span>
-            {/* Shimmer Effect */}
             <div className="absolute inset-0 z-0 h-full w-full translate-x-[-100%] transform bg-white/20 transition-transform duration-500 ease-in-out group-hover:translate-x-0"></div>
         </motion.button>
     );
@@ -91,8 +90,9 @@ export default function ContactPage() {
                     <h1 className="text-5xl md:text-6xl font-extrabold text-blue-900 leading-tight">
                         Get In <span className="text-orange-500">Touch</span>
                     </h1>
+                    {/* FIXED: Replaced ' with &apos; to fix the linting error */}
                     <motion.p variants={itemVariants} className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-                        We're here to help. Whether you have a question about eligibility, partnerships, or anything else, our team is ready to answer all your questions.
+                        We&apos;re here to help. Whether you have a question about eligibility, partnerships, or anything else, our team is ready to answer all your questions.
                     </motion.p>
                 </div>
 
@@ -117,7 +117,6 @@ export default function ContactPage() {
                             </motion.div>
                         ))}
 
-                        {/* --- UPDATED: Embedded Google Map --- */}
                         <motion.div variants={itemVariants} className="mt-12 rounded-xl overflow-hidden shadow-lg border-2 border-slate-100">
                            <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.562389178128!2d77.21623897534438!3d28.61663447567527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3941a80a4e5%3A0x516799c8085156a9!2sMinistry%20of%20Corporate%20Affairs%2C%205th%20Floor%2C%20Shastri%20Bhawan!5e0!3m2!1sen!2sin!4v1725785868694!5m2!1sen!2sin"
@@ -138,16 +137,16 @@ export default function ContactPage() {
                     >
                         <form action="#" method="POST" className="space-y-8">
                             <div>
-                                <label htmlFor="name" className="text-sm font-medium text-blue-900">Full Name</label>
-                                <input type="text" id="name" name="name" className="mt-2 w-full rounded-md border border-slate-200 focus:border-orange-500 focus:ring-orange-500" />
+                                <label htmlFor="name" className="text-sm font-semibold text-blue-900">Full Name</label>
+                                <input type="text" id="name" name="name" className="mt-2 w-full rounded-md border-slate-300 focus:border-orange-500 focus:ring-orange-500 transition" />
                             </div>
                              <div>
-                                <label htmlFor="email" className="text-sm font-medium text-blue-900">Email Address</label>
-                                <input type="email" id="email" name="email" className="mt-2 w-full rounded-md border border-slate-200 focus:border-orange-500 focus:ring-orange-500" />
+                                <label htmlFor="email" className="text-sm font-semibold text-blue-900">Email Address</label>
+                                <input type="email" id="email" name="email" className="mt-2 w-full rounded-md border-slate-300 focus:border-orange-500 focus:ring-orange-500 transition" />
                             </div>
                             <div>
-                                <label htmlFor="message" className="text-sm font-medium text-blue-900">Message</label>
-                                <textarea id="message" name="message" rows="5" className="mt-2 w-full border rounded-md border-slate-200 focus:border-orange-500 focus:ring-orange-500"></textarea>
+                                <label htmlFor="message" className="text-sm font-semibold text-blue-900">Message</label>
+                                <textarea id="message" name="message" rows="5" className="mt-2 w-full rounded-md border-slate-300 focus:border-orange-500 focus:ring-orange-500 transition"></textarea>
                             </div>
                             <div>
                                 <MagneticButton>Send Message</MagneticButton>

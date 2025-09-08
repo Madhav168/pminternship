@@ -78,7 +78,7 @@ export default function ContactPage() {
     };
     
     return (
-        <main id='contact' className="bg-gradient-to-b from-white via-orange-50 to-blue-50 py-24 px-6 sm:px-12 lg:px-20">
+        <main id='support' className="bg-gradient-to-b from-white via-orange-50 to-blue-50 py-24 px-6 sm:px-12 lg:px-20">
             <motion.div 
                 initial="hidden"
                 animate="visible"

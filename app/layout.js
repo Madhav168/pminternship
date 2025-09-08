@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     // Wrap the entire application with ClerkProvider
     <ClerkProvider>
-      <html lang="en">
+      <html lang="en" className="scroll-smooth scroll-pt-13">
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >

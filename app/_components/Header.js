@@ -51,19 +51,19 @@ export default function Header() {
                     <div className="flex items-center gap-1"> <Home className="h-5 w-5" /> Home </div>
                     <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange-500"></span>
                 </Link>
-                <Link href="/gallery" className="group text-blue-900 transition duration-300">
+                <Link href="#gallery" className="group text-blue-900 transition duration-300">
                     <div className="flex items-center gap-1"> <GalleryVertical className="h-5 w-5" /> Gallery </div>
                     <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange-500"></span>
                 </Link>
-                <Link href="/eligibility" className="group text-blue-900 transition duration-300">
+                <Link href="#eligibility" className="group text-blue-900 transition duration-300">
                     <div className="flex items-center gap-1"> <ClipboardCheck className="h-5 w-5" /> Eligibility </div>
                     <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange-500"></span>
                 </Link>
-                <Link href="https://play.google.com/store/apps/details?id=com.mca.pm_internship" className="group text-blue-900 transition duration-300">
+                <Link href="#mobileapp" className="group text-blue-900 transition duration-300">
                     <div className="flex items-center gap-1"> <Smartphone className="h-5 w-5" /> Mobile App </div>
                     <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange-500"></span>
                 </Link>
-                <Link href="/support" className="group text-blue-900 transition duration-300">
+                <Link href="#contact" className="group text-blue-900 transition duration-300">
                     <div className="flex items-center gap-1"> <LifeBuoy className="h-5 w-5" /> Support </div>
                     <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange-500"></span>
                 </Link>
@@ -143,16 +143,16 @@ export default function Header() {
                                 <Link href="/" className="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-700 transition-all hover:bg-slate-100">
                                     <Home className="h-5 w-5" /> Home
                                 </Link>
-                                <Link href="/gallery" className="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-700 transition-all hover:bg-slate-100">
+                                <Link href="#gallery" className="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-700 transition-all hover:bg-slate-100">
                                     <GalleryVertical className="h-5 w-5" /> Gallery
                                 </Link>
-                                <Link href="/eligibility" className="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-700 transition-all hover:bg-slate-100">
+                                <Link href="#eligibility" className="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-700 transition-all hover:bg-slate-100">
                                     <ClipboardCheck className="h-5 w-5" /> Eligibility
                                 </Link>
-                                <Link href="https://play.google.com/store/apps/details?id=com.mca.pm_internship" className="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-700 transition-all hover:bg-slate-100">
+                                <Link href="#mobileapp" className="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-700 transition-all hover:bg-slate-100">
                                     <Smartphone className="h-5 w-5" /> Mobile App
                                 </Link>
-                                <Link href="/support" className="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-700 transition-all hover:bg-slate-100">
+                                <Link href="#contact" className="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-700 transition-all hover:bg-slate-100">
                                     <LifeBuoy className="h-5 w-5" /> Support
                                 </Link>
                             </nav>

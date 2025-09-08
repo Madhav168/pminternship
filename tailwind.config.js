@@ -51,3 +51,97 @@ module.exports = {
   },
   plugins: [],
 };
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  // ...your existing content and theme settings
+  theme: {
+    extend: {
+      // ...your existing extend settings (like keyframes for 'float', etc.)
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        }
+      },
+      animation: {
+        // ...your existing animations
+        // Adjust the duration (e.g., 60s) to make the scroll faster or slower
+        scroll: 'scroll 60s linear infinite',
+      },
+    },
+  },
+  plugins: [],
+};
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  // ...your existing content and theme settings
+  theme: {
+    extend: {
+      // Add these keyframes and animation definitions
+      keyframes: {
+        // Defines the scrolling motion from start to finish
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        // You can keep your other keyframes like 'float' here
+      },
+      animation: {
+        // Makes the 'animate-scroll' class work.
+        // You can adjust the duration (e.g., 40s for faster, 80s for slower)
+        scroll: 'scroll 60s linear infinite',
+        // You can keep your other animations here
+      },
+    },
+  },
+  plugins: [],
+};
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  // ...your existing content and theme settings
+  theme: {
+    extend: {
+      // Add these keyframes and animation definitions
+      keyframes: {
+        // ...your other keyframes
+        mapPing: {
+          '75%, 100%': {
+            transform: 'scale(2.5)',
+            opacity: '0',
+          },
+        },
+      },
+      animation: {
+        // ...your other animations
+        'map-ping': 'mapPing 2s cubic-bezier(0, 0, 0.2, 1) infinite',
+      },
+    },
+  },
+  plugins: [],
+};
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  // ...your existing content and theme settings
+  theme: {
+    extend: {
+      // Add these keyframes and animation definitions
+      keyframes: {
+        // ...your other keyframes
+        wave: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        // ...your other animations
+        wave: 'wave 15s linear infinite',
+      },
+    },
+  },
+  plugins: [],
+};
+
